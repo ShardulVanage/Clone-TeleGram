@@ -4,7 +4,7 @@ import { FiPaperclip, FiMic, FiArrowLeft, FiSearch, FiMoreVertical } from 'react
 import { RiSendPlaneFill } from 'react-icons/ri';
 
 import bg from '../../public/bg.jpg'; 
-
+import wbg from '../../public/whitebg.jpg'
 function ChatWindow({ selectedChat, messages, isMobile, onBackClick, isDarkMode }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearching, setIsSearching] = useState(false);
@@ -53,9 +53,9 @@ function ChatWindow({ selectedChat, messages, isMobile, onBackClick, isDarkMode 
   const headerBgColor = isDarkMode ? '#17212B' : 'white';
   const textColor = isDarkMode ? 'white' : 'black';
   const inputBgColor = isDarkMode ? '#242F3D' : 'white';
-
+const bbgg = isDarkMode ?wbg :bg;
   const chatWindowStyle = {
-    backgroundImage: `url(${bg})`,
+    backgroundImage: `url(${bbgg})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
